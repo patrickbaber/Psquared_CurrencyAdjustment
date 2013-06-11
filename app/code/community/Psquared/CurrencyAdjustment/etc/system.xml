@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <currency translate="label" module="currencyadjustment">
+            <groups>
+                <currency_adjustment translate="label">
+                    <label>Currency Adjustment</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable_adjustment translate="label">
+                            <label>Enable Adjustment</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Enables the adjustment for the currencies.</comment>
+                        </enable_adjustment>
+                        <adjustment_value translate="label">
+                            <label>Adjustment Value</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Decimal value which is multiplied with the currencies.</comment>
+                        </adjustment_value>
+                        <enable_rounding translate="label">
+                            <label>Enable Rounding</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Enables the rounding of the currency factor.</comment>
+                        </enable_rounding>
+                        <rounding_method translate="label">
+                            <label>Rounding Method</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Psquared_CurrencyAdjustment_Model_RoundingMethods</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>See the math functions in the PHP manual for more informations.</comment>
+                        </rounding_method>
+                        <number_digits translate="label">
+                            <label>Number of Digits</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Number of digits after the decimal point. This works only with round as rounding method. See the round function in the PHP manual for more informations.</comment>
+                        </number_digits>
+                    </fields>
+                </currency_adjustment>
+            </groups>
+        </currency>
+    </sections>
+</config>
