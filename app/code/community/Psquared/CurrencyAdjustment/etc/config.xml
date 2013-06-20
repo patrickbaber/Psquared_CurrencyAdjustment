@@ -26,7 +26,9 @@
         <currency>
             <currency_adjustment>
                 <enable_adjustment>0</enable_adjustment>
-                <adjustment_value>1</adjustment_value>
+                <adjustment_values>EUR;1.2
+USD;1.4
+CHF;1.6</adjustment_values>
                 <enable_rounding>0</enable_rounding>
                 <rounding_method>1</rounding_method>
                 <number_digits>2</number_digits>
